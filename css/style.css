@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAV BAR */
+
+.navBar {
+    background-color: rgb(22, 93, 173);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+    grid-column: 1 / 2;
+    margin-left: 15px;
+}
+
+
+.navBar .menu {
+    grid-column: 3 / 6;
+    display: flex;  
+    justify-content: space-around;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;    
+}
+
+.sign {
+    grid-column: 7 / 8;
+}
+
+.shop {
+    grid-column: 8 / 9;
+}
+
+/* FIN DEL NAV BAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* POSICIONAMIENTO DE GRID 
+
+.bodyGrid {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main""aside"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+}
+
+header {
+    grid-area: "header";
+}
+
+main {
+    grid-area: "main;"
+}
+
+.asideVideo {
+    grid-area: "aside"
+}
+
+footer {
+    grid-area: "footer";
+    justify-content: space-around;
+}
+
+
+
+/* FIN DE POSICIONAMIENTO DE GRID 
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bgColor {
+    background-color: black;
+}
+
+.bgColor2 {
+    background-color: lightgrey;
+}
+
+.bgColor3 {
+    background-color: lightblue;
+}
+
+.destacados {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+}
+
+ul,
+header,
+footer {
+    display: flex;
+}
+
+
+ul {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
+    padding: 10px 0px 5px 40px;
+}
+
+.products {width: 250px;}
+
+/*
