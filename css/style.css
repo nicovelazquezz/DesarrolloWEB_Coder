@@ -209,8 +209,7 @@ footer {
 @media screen and (max-width:768px) {
 
 .navBar {
-    grid-template-columns: repeat(8, 1fr)
-    grid-template-rows: 1fr 1fr;    
+    grid-template-columns: repeat(8, 1fr)    
 }
 
 .logo {
@@ -278,7 +277,5 @@ footer {
     width: 90%;
     height: 90%;
     border-radius: 3px;
-    margin-right: 5px;
-}
-
+    margin-right: 5px;}
 }
