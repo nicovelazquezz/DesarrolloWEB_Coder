@@ -199,8 +199,7 @@ table {
     grid-area: h1;
 }
 
-.containerMarcas {
-    width: 100vw;
+.containerMarcas {    
     padding-top: 50px;
     max-width: 1900px;
     min-width: 320px;   
@@ -294,6 +293,9 @@ footer {
 
 .boxRRSS {
     grid-column: 13 / 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boxRRSS a {
@@ -310,13 +312,31 @@ footer {
 /* ANIMACION REDES SOCIALES */
 .boxRRSS a:hover {
     color: #fff;
+    animation: saltar 1s ease-in-out 1 normal both;
 }
-/* FIN ANIMACIÓN */
 
-.boxRRSS h4 {
-    margin-bottom: 25px;
-    font-size: 1.4rem;
+@keyframes saltar {
+    from,
+    65%,
+    85%
+    to {
+        transform: translateY(0) scale(1,1);
+    }
+    15% {
+        transform: translateY(-1rem) scale(1,1.2);
+    }
+    35%, 
+    45% {
+        transform: translateY(-2rem) scale(1,1.08);}
+    75% {
+        transform: translateY(.5rem) scale(1.2,.8);
+    }
+    95% {transform: translateY(0) scale(1.05,1.05);}
 }
+
+
+
+/* FIN ANIMACIÓN */
 
 /* ANIMACIONES FOOTER*/
 
@@ -419,10 +439,6 @@ footer {
 
 .boxRRSS .fa {
     margin: 15px;
-}
-
-.boxRRSS h4 {
-    display: none;
 }
 
 .mapIframe {
